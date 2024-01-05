@@ -1,4 +1,157 @@
-html {
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+/* basic styles */
+* {
 	margin: 0;
 	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	background-color: #fec627;
+}
+a{
+	text-decoration: none;
+	color: rgb(169, 10, 10);
+}
+abbr{
+	cursor: help;
+	border-radius: 19%;
+	padding: 2px;
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+	padding: 3px;
+	margin: 3px;
+	border-radius: 7%;
+	border: dotted 1px rgb(107, 70, 70);
+}
+/*styles for different abbr*/
+[title="Cascading Style Sheets"]{
+	background-color: rgba(168, 187, 255, 0.434);
+}
+[title="Document Object Model"]{
+	background-color: rgba(207, 255, 168, 0.434);
+}
+[title="World Wide Web Consortium"]{
+	background-color: rgba(248, 255, 168, 0.434);
+}
+[title="Web Standards Project"]{
+	background-color: rgba(255, 204, 168, 0.434);
+}
+[title="HyperText Markup Language"]{
+	background-color: rgba(241, 168, 255, 0.434);
+}
+[title="Frequently Asked Questions"]{
+	background-color: rgba(255, 168, 168, 0.434);
+}
+/*styles for the top section*/
+section{
+	height: 660px;
+	background-image: url('./intro.webp');
+	background-repeat: no-repeat;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+header h1, h2{
+	font-weight: 900;
+	font-size: 30px;
+}
+section div{
+	display: flex;
+	flex-direction: column;
+}
+.summary{
+	width: 25%;
+	padding: 2%;
+}
+.summary p{
+	text-align: justify;
+	margin-bottom: 2%;
+}
+.preamble{
+	width: 35%;
+	padding: 2%;
+}
+/*styles for main info */
+.main{
+	float: right;
+	width: 78%;	
+}
+.main div, footer{
+	padding: 4%;
+	width: 90%;
+	margin-right: 5%;
+}
+.main h3{
+	font-size: 25px;
+}
+.requirements a{
+	padding-left: 5px;
+}
+[role="contentinfo"]{
+	display: flex;
+	justify-self: center;
+	margin-top: 30px;
+}
+/*adds pseudo elements*/
+::before {
+	margin: 2%;
+}
+.explanation::before {
+	content: url('./explanation.webp');
+	float: right;
+}
+.participation::before {
+	content: url('./participation.webp');
+	float: left;
+}
+.benefits::before {
+	content: url('./benefits.webp');
+	float: right;
+}
+.requirements::before {
+	content: url('./requirements.webp');
+	float: left;
+}
+.explanation,
+.benefits {
+	float: left;
+}
+.participation,
+.requirements {
+	float: right;
+}
+/*styles for footer*/
+footer{
+	display: flex;
+	justify-content: space-between;
+	color: #51650f;
+	font-weight: 600;
+}
+/*styles for sidebar*/
+.sidebar{
+	position: absolute;
+	width: 15%;
+	float: left;
+	padding: 2%;
+	margin: 1%;
+	background-color: #f7ff80bd;
+	color: rgb(0, 0, 0);
+}
+.sidebar:hover{
+	box-shadow: -2px -2px 20px #dee1afcf;
+	transition: cubic-bezier(linear);
+}
+.sidebar a{
+	color: rgb(147, 83, 0);
+}
+.sidebar h3{
+	padding: 3px;
 }
