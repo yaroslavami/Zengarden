@@ -2,6 +2,10 @@
 
 No change in html, just css
 
+#### GitHub pages
+
+https://yaroslavami.github.io/Zengarden/
+
 ## Brief intro
 
 The code provided is the entire Zengarden project. It's a popular online experiment in CSS-based web design, started by Dan Cederholm.
